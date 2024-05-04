@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GlamouRsabA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="index.js" rel="stylesheet">
+  
+  <body>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            align-self: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .comment-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comment-box h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .comment-box form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><a href="#">GlamouRsabA</a></div>
+    <div class="menu">
+      <a href="#">
+        <ion-icon name="close" class="close"></ion-icon>
+      </a>
+
+
+    </div>
+    <div class="search">
+
+      <a href=""><input type="text" placeholder="search products" id="input">
+        <ion-icon class="s" name="search"></ion-icon>
+      </a>
+    </div>
+    <div class="heading">
+      <ul>
+        <li><a href="index.html" class="under">HOME</a></li>
+        <li><a href="product.html" class="under">OUR PRODUCTS</a></li>
+        <li><a href="contact.html" class="under">CONTACT US</a></li>
+        <li><a href="about.html" class="under">ABOUT US</a></li>
+        <li><a href="feedback.html" class="under">FEEDBACK</a></li>
+        <li><a href="signup.html" class="under">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="heading1">
+      <ion-icon name="menu" class="ham"></ion-icon>
+    </div>
+  </header>
+   
+
+    <!-- Contact Section -->
+    <section style="align-content: center;">
+        <div class="container">
+            <h2>FEEDBACK</h2>
+            <div class="grid">
+                <!-- Comment Box -->
+                <div class="comment-box" style="align-items: center;">
+                    <h3>Leave a Comment</h3>
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" rows="5" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
